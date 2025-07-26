@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f8fa;
+    color: #222;
+}
+
+header {
+    background: #1a365d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header img {
+    margin-right: 16px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    border-radius: 8px;
+    padding: 32px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.service {
+    background: #e8f0fe;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+#contact input,
+#contact textarea {
+    margin-bottom: 12px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+#contact button {
+    padding: 10px;
+    background: #1a365d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-top: 18px;
+}
+
+.map {
+    margin-top: 18px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+footer {
+    background: #1a365d;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    margin-top: 40px;
+    border-radius: 0 0 8px 8px;
+}
