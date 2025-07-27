@@ -8,77 +8,261 @@
     <meta name="description"
         content="3 Elements - Expert webapps, websites, and Android mobile apps for SMEs in Bangalore.">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <img src="logo.png" alt="3 Elements Logo" style="height:60px;">
-        <h1>3 Elements</h1>
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="logo.png" alt="3 Elements Logo">
+                <h1>3 Elements</h1>
+            </div>
+            <nav>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="hero">
-            <h2>Empowering SMEs with Top-Notch Digital Solutions</h2>
-            <p>We are a Bangalore-based company committed to delivering customized web, Android, and IoT solutions for
-                your business.</p>
+            <div class="hero-content">
+                <h2>Empowering SMEs with <span class="highlight">Top-Notch Digital Solutions</span></h2>
+                <p class="hero-subtitle">We are a Bangalore-based company committed to delivering customized web,
+                    Android, and IoT solutions that drive your business forward.</p>
+                <div class="cta-buttons">
+                    <a href="#services" class="btn btn-primary">Explore Services</a>
+                    <a href="#contact" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <i class="fas fa-code"></i>
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-clock"></i>
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
+            </div>
         </section>
 
         <section id="services">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>Web Applications</h3>
-                <p>Custom web apps for facility management, visitor management, inventory control, and industrial IoT.
-                    Automate operations, analyze data, and increase efficiency with secure, scalable solutions.</p>
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p class="section-subtitle">Comprehensive digital solutions tailored for your business needs</p>
             </div>
-            <div class="service">
-                <h3>Websites</h3>
-                <p>Responsive, SEO-optimized websites to showcase your brand and drive customer engagement. Modern
-                    design, fast performance, and easy updates.</p>
-            </div>
-            <div class="service">
-                <h3>Android Mobile Applications</h3>
-                <p>Android apps for facility management, visitor tracking, inventory, and industrial IoT. Manage your
-                    business on the go with reliable, user-friendly solutions.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Applications</h3>
+                    <p>Custom web apps for facility management, visitor management, inventory control, and industrial
+                        IoT. Automate operations, analyze data, and increase efficiency with secure, scalable solutions.
+                    </p>
+                    <ul class="service-features">
+                        <li>Facility Management Systems</li>
+                        <li>Visitor Management</li>
+                        <li>Inventory Control</li>
+                        <li>Industrial IoT Solutions</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Websites</h3>
+                    <p>Responsive, SEO-optimized websites to showcase your brand and drive customer engagement. Modern
+                        design, fast performance, and easy updates.</p>
+                    <ul class="service-features">
+                        <li>Responsive Design</li>
+                        <li>SEO Optimization</li>
+                        <li>Content Management</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Android Mobile Applications</h3>
+                    <p>Android apps for facility management, visitor tracking, inventory, and industrial IoT. Manage
+                        your business on the go with reliable, user-friendly solutions.</p>
+                    <ul class="service-features">
+                        <li>Native Android Development</li>
+                        <li>Cross-platform Solutions</li>
+                        <li>Real-time Sync</li>
+                        <li>Offline Capabilities</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="about">
-            <h2>About Us</h2>
-            <p>At 3 Elements, our mission is to deliver customized digital solutions, striving to meet the evolving
-                needs of the modern business landscape. We aim to democratize technology for SMEs by providing
-                innovative, reliable, and scalable digital solutions that drive efficiency and business expansion.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About 3 Elements</h2>
+                    <p class="about-intro">At 3 Elements, our mission is to deliver customized digital solutions,
+                        striving to meet the evolving needs of the modern business landscape.</p>
+                    <p>We aim to democratize technology for SMEs by providing innovative, reliable, and scalable digital
+                        solutions that drive efficiency and business expansion.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <h4>Innovation First</h4>
+                                <p>Cutting-edge solutions using latest technologies</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Reliable & Secure</h4>
+                                <p>Enterprise-grade security and reliability</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                            <div>
+                                <h4>Scalable Solutions</h4>
+                                <p>Grow your business without technical limitations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="tech-stack">
+                        <h4>Our Tech Stack</h4>
+                        <div class="tech-icons">
+                            <span class="tech-item">React</span>
+                            <span class="tech-item">Node.js</span>
+                            <span class="tech-item">Android</span>
+                            <span class="tech-item">IoT</span>
+                            <span class="tech-item">AWS</span>
+                            <span class="tech-item">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
-            <h2>Contact Us</h2>
-            <div>
-                <form action="https://formspree.io/f/your_form_id" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-                <div class="contact-info">
-                    <p><strong>Address:</strong> No 38/1, 1st Model House Street, Basavangudi, Bengaluru 560 004</p>
-                    <p><strong>Email:</strong> sameera@3elements.tech</p>
-                    <p><strong>Phone:</strong> +91 7019253548</p>
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to transform your business? Let's discuss your project.</p>
                 </div>
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps?q=No+38/1,+1st+Model+House+Street,+Basavangudi,+Bengaluru+560+004&output=embed"
-                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="contact-content">
+                    <div class="contact-form-section">
+                        <form class="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone Number">
+                                <select name="service" required>
+                                    <option value="">Select Service</option>
+                                    <option value="web-app">Web Application</option>
+                                    <option value="website">Website</option>
+                                    <option value="mobile-app">Mobile App</option>
+                                    <option value="consultation">Consultation</option>
+                                </select>
+                            </div>
+                            <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <div class="contact-card">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p>No 38/1, 1st Model House Street<br>Basavangudi, Bengaluru 560 004</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:sameera@3elements.tech">sameera@3elements.tech</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+917019253548">+91 7019253548</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps?q=No+38/1,+1st+Model+House+Street,+Basavangudi,+Bengaluru+560+004&output=embed"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 3 Elements. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="3 Elements Logo">
+                    <h3>3 Elements</h3>
+                    <p>Empowering SMEs with digital solutions</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Applications</a></li>
+                            <li><a href="#services">Websites</a></li>
+                            <li><a href="#services">Mobile Apps</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 3 Elements. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 
