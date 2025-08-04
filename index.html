@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body>
+<body id="top">
     <header>
         <div class="header-content">
             <div class="logo-section">
-                <img src="logo.png" alt="3 Elements Logo">
-                <h1>3 Elements</h1>
+                <a href="#top">
+                    <img src="logo.png" alt="3 Elements Logo">
+                </a>
             </div>
             <nav>
                 <a href="#services">Services</a>
@@ -28,7 +29,8 @@
     </header>
 
     <main>
-        <section id="hero">
+        <section id="hero" class="hero-with-image">
+            <div class="hero-image-overlay"></div>
             <div class="hero-content">
                 <h2>Empowering SMEs with <span class="highlight">Top-Notch Digital Solutions</span></h2>
                 <p class="hero-subtitle">We are a Bangalore-based company committed to delivering customized web,
@@ -139,6 +141,13 @@
                                 <p>Grow your business without technical limitations</p>
                             </div>
                         </div>
+                        <div class="feature">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div>
+                                <h4>Cost Effective</h4>
+                                <p>Affordable solutions that maximize your ROI</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="about-image">
@@ -165,7 +174,7 @@
                 </div>
                 <div class="contact-content">
                     <div class="contact-form-section">
-                        <form class="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+                        <form class="contact-form" id="contactForm">
                             <div class="form-group">
                                 <input type="text" name="name" placeholder="Your Name" required>
                                 <input type="email" name="email" placeholder="Your Email" required>
@@ -264,6 +273,43 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Get form data
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const phone = document.querySelector('input[name="phone"]').value;
+            const service = document.querySelector('select[name="service"]').value;
+            const message = document.querySelector('textarea[name="message"]').value;
+
+            // Create email content
+            const subject = `New Inquiry from ${name} - ${service || 'General Inquiry'}`;
+            const body = `Hello Sameera,
+
+You have received a new inquiry from your website (3elements.tech):
+
+CLIENT DETAILS:
+Name: ${name}
+Email: ${email}
+Phone: ${phone || 'Not provided'}
+Service Interested: ${service || 'Not specified'}
+
+MESSAGE:
+${message}
+
+---
+This message was sent from the contact form on 3elements.tech`;
+
+            // Create mailto link
+            const mailtoLink = `mailto:sameera@3elements.tech?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // Open email client
+            window.location.href = mailtoLink;
+        });
+    </script>
 </body>
 
 </html>
