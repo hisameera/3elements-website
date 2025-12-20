@@ -6,14 +6,24 @@
     <title>3 Elements | Digital Solutions for SMEs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="3 Elements - Expert webapps, websites, and Android mobile apps for SMEs in Bangalore.">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        content="3 Elements - Expert webapps, websites, and Android mobile apps for SMEs in Bangalore. Modern, scalable digital solutions.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="top">
-    <header>
+    <header id="main-header">
         <div class="header-content">
             <div class="logo-section">
                 <a href="#top">
@@ -22,144 +32,155 @@
             </div>
             <nav>
                 <a href="#services">Services</a>
+                <a href="#featured-project">Case Study</a>
                 <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Start Your
+                    Project</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="hero" class="hero-with-image">
-            <div class="hero-image-overlay"></div>
+        <section id="hero">
             <div class="hero-content">
-                <h2>Empowering SMEs with <span class="highlight">Top-Notch Digital Solutions</span></h2>
-                <p class="hero-subtitle">We are a Bangalore-based company committed to delivering customized web,
-                    Android, and IoT solutions that drive your business forward.</p>
-                <div class="cta-buttons">
-                    <a href="#services" class="btn btn-primary">Explore Services</a>
-                    <a href="#contact" class="btn btn-secondary">Get Started</a>
+                <h2 data-reveal>Empowering SMEs with <br><span class="highlight">Top-Notch Digital Solutions</span></h2>
+                <p class="hero-subtitle" data-reveal>We are a Bangalore-based technology partner committed to delivering
+                    customized web,
+                    Android, and IoT solutions that drive efficiency and growth.</p>
+                <div class="cta-buttons" data-reveal>
+                    <a href="#services" class="btn btn-primary">Our Expertise <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Get Free Consultation</a>
                 </div>
             </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <i class="fas fa-code"></i>
+
+            <div class="hero-stats" data-reveal>
+                <div class="stat glass">
+                    <i class="fas fa-layer-group"></i>
                     <span class="stat-number">50+</span>
-                    <span class="stat-label">Projects Delivered</span>
+                    <span class="stat-label">Solutions Delivered</span>
                 </div>
-                <div class="stat">
-                    <i class="fas fa-users"></i>
+                <div class="stat glass">
+                    <i class="fas fa-smile-beam"></i>
                     <span class="stat-number">30+</span>
-                    <span class="stat-label">Happy Clients</span>
+                    <span class="stat-label">Trusted Clients</span>
                 </div>
-                <div class="stat">
-                    <i class="fas fa-clock"></i>
+                <div class="stat glass">
+                    <i class="fas fa-bolt"></i>
                     <span class="stat-number">24/7</span>
-                    <span class="stat-label">Support</span>
+                    <span class="stat-label">Expert Support</span>
                 </div>
             </div>
         </section>
 
         <section id="services">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p class="section-subtitle">Comprehensive digital solutions tailored for your business needs</p>
+            <div class="section-header" data-reveal>
+                <h2>Our Core Services</h2>
+                <p class="section-subtitle">Scalable digital products tailored to your specific business challenges</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card glass" data-reveal>
                     <div class="service-icon">
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <h3>Web Applications</h3>
-                    <p>Custom web apps for facility management, visitor management, inventory control, and industrial
-                        IoT. Automate operations, analyze data, and increase efficiency with secure, scalable solutions.
-                    </p>
+                    <p>Enterprise-grade systems for facility management, visitor tracking, and industrial IoT. Scalable
+                        and secure.</p>
                     <ul class="service-features">
-                        <li>Facility Management Systems</li>
-                        <li>Visitor Management</li>
+                        <li>Facility Management</li>
                         <li>Inventory Control</li>
-                        <li>Industrial IoT Solutions</li>
+                        <li>Industrial IoT Dashboards</li>
+                        <li>Scalable Cloud Architecture</li>
                     </ul>
                 </div>
-                <div class="service-card">
+                <div class="service-card glass" data-reveal>
                     <div class="service-icon">
-                        <i class="fas fa-globe"></i>
+                        <i class="fas fa-rocket"></i>
                     </div>
-                    <h3>Websites</h3>
-                    <p>Responsive, SEO-optimized websites to showcase your brand and drive customer engagement. Modern
-                        design, fast performance, and easy updates.</p>
+                    <h3>Business Websites</h3>
+                    <p>High-conversion, SEO-optimized digital storefronts that rank well and turn visitors into loyal
+                        customers.</p>
                     <ul class="service-features">
-                        <li>Responsive Design</li>
+                        <li>High Performance</li>
+                        <li>Modern UI/UX Design</li>
                         <li>SEO Optimization</li>
-                        <li>Content Management</li>
-                        <li>Performance Optimization</li>
+                        <li>Mobile-First Approach</li>
                     </ul>
                 </div>
-                <div class="service-card">
+                <div class="service-card glass" data-reveal>
                     <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-mobile-screen-button"></i>
                     </div>
-                    <h3>Android Mobile Applications</h3>
-                    <p>Android apps for facility management, visitor tracking, inventory, and industrial IoT. Manage
-                        your business on the go with reliable, user-friendly solutions.</p>
+                    <h3>Mobile Solutions</h3>
+                    <p>Native Android applications designed for industrial speed, reliability, and ease of use in the
+                        field.</p>
                     <ul class="service-features">
-                        <li>Native Android Development</li>
-                        <li>Cross-platform Solutions</li>
-                        <li>Real-time Sync</li>
-                        <li>Offline Capabilities</li>
+                        <li>Real-time Data Sync</li>
+                        <li>Offline Availability</li>
+                        <li>Native Performance</li>
+                        <li>Custom Industrial Workflows</li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Project - Full Width Impact -->
+        <section id="featured-project">
+            <div class="featured-card">
+                <div class="featured-image" data-reveal>
+                    <img src="finance-blog.png" alt="Personal Finance Blog Showcase">
+                </div>
+                <div class="featured-content" data-reveal>
+                    <span class="project-badge">Featured Case Study</span>
+                    <h3>The Personal Finance Blog</h3>
+                    <p>A flagship project demonstrating our ability to build complex, secure, and user-friendly
+                        financial platforms. This platform empowers thousands through financial literacy and interactive
+                        planning tools.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Firebase</span>
+                        <span>FinTech</span>
+                    </div>
+                    <a href="https://pf-blog-c5b94.web.app/" target="_blank" class="btn btn-primary">
+                        View Live Project <i class="fas fa-external-link-alt"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
         <section id="about">
             <div class="about-content">
-                <div class="about-text">
-                    <h2>About 3 Elements</h2>
-                    <p class="about-intro">At 3 Elements, our mission is to deliver customized digital solutions,
-                        striving to meet the evolving needs of the modern business landscape.</p>
-                    <p>We aim to democratize technology for SMEs by providing innovative, reliable, and scalable digital
-                        solutions that drive efficiency and business expansion.</p>
+                <div class="about-text" data-reveal>
+                    <span class="project-badge" style="background: rgba(99,102,241,0.1); color: var(--primary);">Who We
+                        Are</span>
+                    <h2>Innovation-Driven <br>Technology Experts</h2>
+                    <p class="about-intro">At 3 Elements, we bridge the gap between complex technology and small
+                        business needs.</p>
+                    <p>Our mission is to democratize high-end enterprise technology for SMEs, providing scalable
+                        solutions that weren't traditionally accessible to smaller players.</p>
+
                     <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-lightbulb"></i>
-                            <div>
-                                <h4>Innovation First</h4>
-                                <p>Cutting-edge solutions using latest technologies</p>
-                            </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Innovation First</h4>
+                            <p>We use the latest tech stacks to ensure longevity.</p>
                         </div>
-                        <div class="feature">
-                            <i class="fas fa-shield-alt"></i>
-                            <div>
-                                <h4>Reliable & Secure</h4>
-                                <p>Enterprise-grade security and reliability</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-expand-arrows-alt"></i>
-                            <div>
-                                <h4>Scalable Solutions</h4>
-                                <p>Grow your business without technical limitations</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-dollar-sign"></i>
-                            <div>
-                                <h4>Cost Effective</h4>
-                                <p>Affordable solutions that maximize your ROI</p>
-                            </div>
+                        <div class="about-feature">
+                            <i class="fas fa-shield-check"></i>
+                            <h4>Security Focused</h4>
+                            <p>Enterprise-grade security in every line of code.</p>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="tech-stack">
-                        <h4>Our Tech Stack</h4>
-                        <div class="tech-icons">
-                            <span class="tech-item">React</span>
-                            <span class="tech-item">Node.js</span>
-                            <span class="tech-item">Android</span>
-                            <span class="tech-item">IoT</span>
-                            <span class="tech-item">AWS</span>
-                            <span class="tech-item">MongoDB</span>
+                <div class="about-image" data-reveal>
+                    <div class="tech-stack-card">
+                        <h4>Our Trusted Tech Stack</h4>
+                        <div class="tech-grid">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Android Native</span>
+                            <span class="tech-tag">AWS Cloud</span>
+                            <span class="tech-tag">Industrial IoT</span>
+                            <span class="tech-tag">MongoDB</span>
                         </div>
                     </div>
                 </div>
@@ -168,66 +189,80 @@
 
         <section id="contact">
             <div class="contact-container">
-                <div class="contact-header">
-                    <h2>Get In Touch</h2>
-                    <p>Ready to transform your business? Let's discuss your project.</p>
+                <div class="contact-info" data-reveal>
+                    <span class="project-badge" style="background: rgba(99,102,241,0.1); color: var(--primary);">Get In
+                        Touch</span>
+                    <h2>Let's build something <br>extraordinary.</h2>
+                    <p>Have a project in mind? We'd love to hear from you. Our team will get back to you within 24
+                        hours.</p>
+
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h4>Email Us</h4>
+                            <p><a href="mailto:sameera@3elements.tech">sameera@3elements.tech</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+917019253548">+91 7019253548</a></p>
+                        </div>
+                    </div>
+
+                    <div class="map-card">
+                        <iframe
+                            src="https://www.google.com/maps?q=No+38/1,+1st+Model+House+Street,+Basavangudi,+Bengaluru+560+004&output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
-                <div class="contact-content">
-                    <div class="contact-form-section">
-                        <form class="contact-form" id="contactForm">
+
+                <div class="contact-form-section glass" data-reveal>
+                    <form id="contactForm">
+                        <div class="form-row">
                             <div class="form-group">
-                                <input type="text" name="name" placeholder="Your Name" required>
-                                <input type="email" name="email" placeholder="Your Email" required>
+                                <label
+                                    style="display:block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem;">Your
+                                    Name</label>
+                                <input type="text" name="name" placeholder="John Doe" required>
                             </div>
                             <div class="form-group">
-                                <input type="tel" name="phone" placeholder="Phone Number">
+                                <label
+                                    style="display:block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem;">Email
+                                    Address</label>
+                                <input type="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label
+                                    style="display:block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem;">Phone</label>
+                                <input type="tel" name="phone" placeholder="+91 000 000 0000">
+                            </div>
+                            <div class="form-group">
+                                <label
+                                    style="display:block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem;">Service</label>
                                 <select name="service" required>
                                     <option value="">Select Service</option>
                                     <option value="web-app">Web Application</option>
-                                    <option value="website">Website</option>
-                                    <option value="mobile-app">Mobile App</option>
-                                    <option value="consultation">Consultation</option>
+                                    <option value="website">Business Website</option>
+                                    <option value="mobile-app">Mobile Application</option>
+                                    <option value="iot">IoT Solution</option>
                                 </select>
                             </div>
-                            <textarea name="message" placeholder="Tell us about your project..." required></textarea>
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-paper-plane"></i>
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-
-                    <div class="contact-info-section">
-                        <div class="contact-card">
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <h4>Address</h4>
-                                    <p>No 38/1, 1st Model House Street<br>Basavangudi, Bengaluru 560 004</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <h4>Email</h4>
-                                    <p><a href="mailto:sameera@3elements.tech">sameera@3elements.tech</a></p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <div>
-                                    <h4>Phone</h4>
-                                    <p><a href="tel:+917019253548">+91 7019253548</a></p>
-                                </div>
-                            </div>
                         </div>
-
-                        <div class="map-container">
-                            <iframe
-                                src="https://www.google.com/maps?q=No+38/1,+1st+Model+House+Street,+Basavangudi,+Bengaluru+560+004&output=embed"
-                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="form-group">
+                            <label
+                                style="display:block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem;">Project
+                                Details</label>
+                            <textarea name="message" placeholder="Tell us a bit about your project goals..."
+                                required></textarea>
                         </div>
-                    </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Send Proposal Request <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -235,79 +270,80 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-main">
+            <div class="footer-top">
                 <div class="footer-brand">
-                    <img src="logo.png" alt="3 Elements Logo">
-                    <h3>3 Elements</h3>
-                    <p>Empowering SMEs with digital solutions</p>
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="3 Elements Logo">
+                        <h3 style="color: white">3 Elements</h3>
+                    </div>
+                    <p>Empowering small and medium enterprises with enterprise-grade technology and creative digital
+                        solutions.</p>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#services">Web Applications</a></li>
-                            <li><a href="#services">Websites</a></li>
-                            <li><a href="#services">Mobile Apps</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Connect</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Apps</a></li>
+                        <li><a href="#services">Websites</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-group">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 3 Elements. All rights reserved.</p>
+                <p>&copy; 2025 3 Elements Digital Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // Header Scroll Effect
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll Reveal Animation
+        const revealElements = document.querySelectorAll('[data-reveal]');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Form Submission
         document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
 
-            // Get form data
-            const name = document.querySelector('input[name="name"]').value;
-            const email = document.querySelector('input[name="email"]').value;
-            const phone = document.querySelector('input[name="phone"]').value;
-            const service = document.querySelector('select[name="service"]').value;
-            const message = document.querySelector('textarea[name="message"]').value;
+            const subject = `New Inquiry: ${data.name} - ${data.service}`;
+            const body = `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nService: ${data.service}\n\nMessage:\n${data.message}`;
 
-            // Create email content
-            const subject = `New Inquiry from ${name} - ${service || 'General Inquiry'}`;
-            const body = `Hello Sameera,
-
-You have received a new inquiry from your website (3elements.tech):
-
-CLIENT DETAILS:
-Name: ${name}
-Email: ${email}
-Phone: ${phone || 'Not provided'}
-Service Interested: ${service || 'Not specified'}
-
-MESSAGE:
-${message}
-
----
-This message was sent from the contact form on 3elements.tech`;
-
-            // Create mailto link
-            const mailtoLink = `mailto:sameera@3elements.tech?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-            // Open email client
-            window.location.href = mailtoLink;
+            window.location.href = `mailto:sameera@3elements.tech?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         });
     </script>
 </body>
