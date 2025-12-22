@@ -101,6 +101,12 @@ header.scrolled {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .header-content {
+        padding: 0 1.25rem;
+    }
+}
+
 .logo-section a {
     display: flex;
     align-items: center;
@@ -140,6 +146,12 @@ main {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0 1.25rem;
+    }
 }
 
 /* Hero Section */
@@ -189,6 +201,21 @@ main {
     gap: 1.25rem;
     justify-content: center;
     margin-bottom: 5rem;
+}
+
+@media (max-width: 640px) {
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .btn {
@@ -297,7 +324,7 @@ section {
 /* Services Grid */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
     gap: 2.5rem;
 }
 
@@ -767,15 +794,53 @@ footer {
 @media (max-width: 768px) {
     nav {
         display: none;
-        /* Add a mobile menu later if needed */
+    }
+
+    #hero {
+        padding: 6rem 0 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        word-wrap: break-word;
+    }
+
+    .hero-content h2 br {
+        display: none;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
     }
 
     .hero-stats {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat {
+        padding: 1.5rem;
+    }
+
+    #portfolio {
+        width: 100%;
+        margin-left: 0;
+        padding: 5rem 0;
+    }
+
+    .featured-card {
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    #portfolio h3 {
+        font-size: 2rem;
     }
 
     .footer-top {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .form-row {
@@ -783,11 +848,21 @@ footer {
     }
 
     #contact {
-        padding: 3rem 1.5rem;
+        padding: 3rem 1rem;
+        margin-bottom: 3rem;
     }
 
-    .featured-card {
-        padding: 0 1.5rem;
+    .contact-form-section {
+        padding: 1.5rem;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
