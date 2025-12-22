@@ -379,8 +379,8 @@ section {
     font-weight: bold;
 }
 
-/* Featured Project Overhaul */
-#featured-project {
+/* Portfolio / Featured Works */
+#portfolio {
     background: #0f172a;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -388,7 +388,7 @@ section {
     color: white;
 }
 
-#featured-project .section-header h2 {
+#portfolio .section-header h2 {
     color: white;
 }
 
@@ -433,16 +433,35 @@ section {
     display: inline-block;
 }
 
-#featured-project h3 {
+#portfolio h3 {
     color: white;
     font-size: clamp(2rem, 4vw, 3.5rem);
     margin-bottom: 1.5rem;
 }
 
-#featured-project p {
+#portfolio p {
     color: #94a3b8;
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
+}
+
+/* Alternate Layout for Portfolio Cards */
+.featured-card.reverse .featured-image {
+    order: 2;
+}
+
+.featured-card.reverse .featured-content {
+    order: 1;
+}
+
+@media (max-width: 1024px) {
+    .featured-card.reverse .featured-image {
+        order: 1;
+    }
+
+    .featured-card.reverse .featured-content {
+        order: 2;
+    }
 }
 
 .project-tags {
