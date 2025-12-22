@@ -141,6 +141,64 @@ nav a:not(.btn):hover {
     color: var(--primary);
 }
 
+/* Mobile Nav Toggle Button */
+.mobile-nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+    position: relative;
+    width: 44px;
+    height: 44px;
+}
+
+.hamburger {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-main);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+.mobile-nav-toggle.active .hamburger {
+    background: transparent;
+}
+
+.mobile-nav-toggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.mobile-nav-toggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+body.nav-open {
+    overflow: hidden;
+}
+
 /* Main Layout */
 main {
     max-width: 1280px;
@@ -182,6 +240,7 @@ main {
 .highlight {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
@@ -421,12 +480,16 @@ section {
 
 .featured-card {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 8rem;
     padding: 0 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
     align-items: center;
+}
+
+.featured-card:last-child {
+    margin-bottom: 0;
 }
 
 .featured-image {
@@ -447,9 +510,9 @@ section {
 }
 
 .project-badge {
-    background: rgba(99, 102, 241, 0.2);
-    color: var(--primary-light);
-    border: 1px solid rgba(99, 102, 241, 0.3);
+    background: rgba(99, 102, 241, 0.15);
+    color: #a5b4fc;
+    border: 1px solid rgba(99, 102, 241, 0.4);
     padding: 0.5rem 1.25rem;
     border-radius: 50px;
     font-size: 0.85rem;
@@ -826,16 +889,101 @@ footer {
     #portfolio {
         width: 100%;
         margin-left: 0;
-        padding: 5rem 0;
+        padding: 6rem 0;
+    }
+
+    #portfolio .section-header {
+        margin-bottom: 3rem;
+        padding: 0 1.25rem;
     }
 
     .featured-card {
-        padding: 0 1rem;
-        gap: 2rem;
+        padding: 0 1.25rem;
+        gap: 1.5rem;
+        margin-bottom: 6rem;
+    }
+
+    .featured-card .featured-content {
+        text-align: left;
+    }
+
+    .featured-card h3 {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .featured-card .project-tags {
+        margin-bottom: 1.5rem;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .featured-card .project-tags span {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .featured-card .btn {
+        width: auto;
+        display: inline-flex;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .mobile-nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+        display: flex;
+        z-index: 1000;
+    }
+
+    #nav-menu.active {
+        right: 0;
+    }
+
+    #nav-menu a {
+        font-size: 1.25rem;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        color: var(--text-main);
+    }
+
+    #nav-menu .btn {
+        margin-top: 1rem;
+        width: auto;
     }
 
     #portfolio h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    #portfolio p {
+        font-size: 1.05rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-badge {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.8rem;
+        margin-bottom: 0.5rem;
     }
 
     .footer-top {

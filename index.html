@@ -30,13 +30,16 @@
                     <img src="logo.png" alt="3 Elements Logo">
                 </a>
             </div>
-            <nav>
+            <nav id="nav-menu">
                 <a href="#services">Services</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#about">About</a>
                 <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Start Your
                     Project</a>
             </nav>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
         </div>
     </header>
 
@@ -131,7 +134,7 @@
                     partners</p>
             </div>
 
-            <div class="featured-card" style="margin-bottom: 8rem;">
+            <div class="featured-card">
                 <div class="featured-image" data-reveal>
                     <img src="finance-blog.png" alt="Personal Finance Blog Showcase">
                 </div>
@@ -370,6 +373,25 @@
             const body = `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone}\nService: ${data.service}\n\nMessage:\n${data.message}`;
 
             window.location.href = `mailto:sameera@3elements.tech?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+
+        // Mobile Nav Toggle
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = navMenu.querySelectorAll('a');
+
+        mobileNavToggle.addEventListener('click', () => {
+            mobileNavToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            document.body.classList.toggle('nav-open');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNavToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('nav-open');
+            });
         });
     </script>
 </body>
