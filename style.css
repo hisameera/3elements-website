@@ -1025,3 +1025,34 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+@keyframes pulse-border {
+    0% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+@media (max-width: 640px) {
+    .finance-promo {
+        padding: 1rem !important;
+        margin-top: 1.5rem !important;
+    }
+
+    .finance-promo p {
+        font-size: 0.9rem !important;
+        line-height: 1.5;
+    }
+
+    .finance-promo .mobile-break {
+        display: block !important;
+        margin-bottom: 0.25rem;
+    }
+}
